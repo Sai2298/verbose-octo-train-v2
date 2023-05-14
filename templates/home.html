@@ -14,9 +14,10 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class="container">  
     <h1 class="text-center mt-2"> K Careers </h1>
-    This is just a prototype website. 
+     
     <p></p>
     <img id="banner" src="static/banner.jpeg">
     <h2 class="text-center mt-2" >About K</h2>
@@ -33,7 +34,9 @@ Whether you are a recent graduate or an experienced professional, we have a vari
 We are committed to creating a culture of collaboration and innovation, where everyone has the opportunity to contribute to the success of the organization. Our team is passionate about delivering high-quality products and services to our customers, and we are always looking for talented individuals who share our values and goals.
 </p>
 <p>
-If you are interested in joining our team, please review our current job openings and submit your application today. We look forward to hearing from you!</p>
+If you are interested in joining our team, please review our current job openings and submit your application today. We look forward to hearing from you!
+<br> This is just a prototype website.
+</p>
   <h2 class="text-center mt-2"> Job openings </h2>
  <p style="font-size:25px">Jobs Openings</p>
       <p>
@@ -45,9 +48,10 @@ If you are interested in joining our team, please review our current job opening
       
       </p>
     <div class="text-center"> 
-  <button class="btn btn-primary btn-lg">Contact Us</button>
+  <a href="mailto:testshow2021@gmail.com?body=%0D%0AHello%2C%0D%0A%0D%0AI%20am%20facing%20%3Cissue%3E%20since%20%3Cdate%3E.%20Please%20help%20me%20with%20this.%0D%0A%0D%0ARegards%2C%0D%0A%3Cyour%20name%3E%0D%0A%0D%0A%0D%0A%0D%0A" type="button" class="btn btn-primary btn-lg">Contact Us</a>
     
-    <p>Copyright 2023, K</p>
+    
       </div>
+      {% include 'footer.html' %}
   </body>
 </html>
