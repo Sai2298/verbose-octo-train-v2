@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> {{job.title}}</title>
+  </head>
+
+  <body >
+    {% include 'bootstrap.html' %}
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+    <div class="container">  
+    <h1 class="text-center mt-2"> K Careers </h1>
+    <img id="banner" src="static/banner.jpeg">
+    </div>
+    <div id="conf">
+    <h4> Title </h4>
+    <p>{{job.title}}</p>
+    <h4>Location</h4>
+    <p>{{job.location}}</p>
+    <h4>Salary</h4>
+    <p>{{job.currency}}{{job.salary}}</p>
+    <h4>Responsibilities</h4> 
+      <ul>
+      {% for line in job.responsibilities.split("\n") %}
+      <li>{{line}}</li>
+      {% endfor %}
+    </ul>
+    <h4>Requirements</h4> 
+      <ol>
+      {% for line in job.requirements.split("\n") %}
+      <li>{{line}}</li>
+      {% endfor %}
+    </ol>
+    </div>
+    <div>
+    {% include 'footer.html' %}
+    </div>
+  </body>
+    
